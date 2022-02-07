@@ -1,0 +1,22 @@
+use almacenes
+db.createCollection('Almacenes')
+
+db.Almacenes.insertOne(
+ { 
+  _Codigo: 1,
+  Lugar: 'Barcelona',
+  Capacidad: 500
+ }
+)
+
+
+db.createCollection('Cajas')
+
+db.Cajas.insertOne(
+ { 
+  _Num_Referencia: '13B',
+  Contenido: 'Ordenador',
+  Valor: 560,
+  Almacen: 15
+ }
+)
