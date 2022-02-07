@@ -1,0 +1,27 @@
+use Cientificos
+db.createCollection('Cientificos')
+db.Cientificos.insertOne(
+	{  
+		_DNI: '11111111P',
+		NomApels: 'Eloy' 
+	}
+)
+
+
+db.createCollection('Asignado_A')
+db.Asignado_A.insertOne(
+	{  
+		_Cientifico: '11111111P',
+		_Proyecto: '1' 
+	}
+)
+
+
+db.createCollection('Proyecto')
+db.Proyecto.insertOne(
+	{  
+		_Id: '1',
+		Nombre: 'Eloy',
+		Horas: 400
+	}
+)
