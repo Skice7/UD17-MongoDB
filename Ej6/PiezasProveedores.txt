@@ -1,0 +1,26 @@
+use PiezasProveedores
+
+db.createCollection('Piezas')
+db.Piezas.insertOne(
+   {
+    _Codigo: 1,
+    Nombre: 'Pieza'
+  }
+)
+
+db.createCollection('Suministra')
+db.Suministra.insertOne(
+   {
+    _CodigoPieza: 1,
+    _IdProveedor: 1,
+    Precio: 4
+  }
+)
+
+db.createCollection('Proveedores')
+db.Proveedores.insertOne(
+   {
+    _Id: 1,
+    Nombre: 'A'
+  }
+)
