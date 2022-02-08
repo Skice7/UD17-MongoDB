@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "620243ee8f71faf8275c040a"
+  }
+},{
+  "_id": {
+    "$oid": "620244ef8f71faf8275c040b"
+  },
+  "_DNI": "12345678A",
+  "Nombre": "Victor",
+  "Apellidos": "Castillo",
+  "Departamento": 3
+}]

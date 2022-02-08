@@ -1,0 +1,20 @@
+use Empleados
+db.createCollection('Empleados')
+
+db.empleados.insertOne(
+  {
+    _DNI:'12345678A',
+    Nombre:'Victor',
+    Apellidos:'Castillo',
+    Departamento:3
+      })
+
+db.createCollection('Departamentos')
+
+db.departamentos.insertOne(
+  {
+_Codigo:1,
+Nombre:'Departamento1',
+Presupuesto:123
+}
+)
