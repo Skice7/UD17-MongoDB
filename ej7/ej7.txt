@@ -1,0 +1,31 @@
+use almacenes
+
+db.createCollection('cajeros')
+
+db.createCollection('productos')
+
+db.createCollection('venta')
+
+db.createCollection('maquinas')
+
+db.productos.insertOne({
+  _codigo: 1,
+  nombre: 'nombre1',
+  precio: 1
+})
+
+db.cajeros.insertOne({
+  _codigo: 1,
+  nomapels: 'nomapels1'
+})
+
+db.maquinas.insertOne({
+  _codigo: 1,
+  piso: 1
+})
+
+db.venta.insertOne({
+  _cajero: 1,
+  maquina: 1,
+  producto: 1
+})

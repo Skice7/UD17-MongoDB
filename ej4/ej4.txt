@@ -1,0 +1,27 @@
+use peliculas
+
+db.createCollection('salas')
+
+db.salas.insertOne(
+  {
+    _codigo: 1,
+  }
+  )
+
+db.salas.insertOne(
+  {
+    _codigo: 1,
+    nombre: 'nombre1',
+    pelicula: 'pelicla'
+  }
+  )
+
+db.createCollection('peliculas')
+
+db.peliculas.insertOne(
+  {
+    _codigo: 1,
+    nombre: 'nombre1',
+    calificacionedad: 1
+  }
+  )

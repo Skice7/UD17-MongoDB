@@ -1,0 +1,28 @@
+use TiendaInformatica
+ 
+db.createCollection('fabricantes')
+
+db.fabricantes.insertOne(
+  {
+    _codigo: 1,
+    nombre: 'fabricante1'
+  }
+  )
+
+db.createCollection('articulos')
+
+db.articulos.insertOne(
+  {
+    _codigo: 1,
+    nombre: 'articulo1',
+  }
+  )
+
+db.articulos.insertOne(
+  {
+    _codigo: 1,
+    nombre: 'articulo1',
+    precio: 1,
+    fabricante: 1
+  }
+  )
